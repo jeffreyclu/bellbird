@@ -47,11 +47,24 @@ chirp.deleteChirp = async (req, res, next) => {
 
 chirp.deleteChirps = async (req, res, next) => {	
   try {	
-    Chirp.destroy({ where: {} });
+    await Chirp.destroy({ where: {} });
     res.locals.result = { status: 'success'};	
     next();	
   } catch (err) {	
     next(err);	
+  }
+}
+
+chirp.upvoteChirp = async (req, res, next) => {
+  const { id } = req.params;
+  try {
+    const foundChirp = await Chirp.findByPk(id);
+    await foundChirp.increment('upvotes');
+    console.log(foundChirp)
+    res.locals.result = { status: 'success'};
+    next();
+  } catch (err) {
+    next(err);
   }
 }
 

@@ -15,6 +15,10 @@ Chirp.init(
     text: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    upvotes: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0
     }
   },
   {

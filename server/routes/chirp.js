@@ -19,10 +19,10 @@ router.post('/post',
   (req, res) => res.status(200).json(res.locals.chirp)
 )
 
-// router.put('/:id',
-//   chirpController.putChirp,
-//   (req, res) => res.status(200).json(res.locals.result)
-// )
+router.put('/upvote/:id',
+  chirpController.upvoteChirp,
+  (req, res) => res.status(200).json(res.locals.result)
+)
 
 router.delete('/delete',
   chirpController.deleteChirps,
