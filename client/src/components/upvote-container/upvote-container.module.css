@@ -1,0 +1,10 @@
+.upvoteContainer {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-left: 1px solid grey;
+  padding-left: 2rem;
+}

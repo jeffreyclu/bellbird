@@ -1,0 +1,30 @@
+.chirperContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  line-height: 1.5rem;
+  margin: 3rem 0;
+}
+
+.chirpInput {
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.chirper {
+  margin: 0;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  font-weight: bold;
+}

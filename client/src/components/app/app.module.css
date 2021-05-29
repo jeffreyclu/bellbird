@@ -1,0 +1,38 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  background: rgb(59,57,101);
+  background: -moz-linear-gradient(180deg, rgba(59,57,101,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(59,57,101,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(59,57,101,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b3965",endColorstr="#000000",GradientType=1);
+}
+
+.chirpContainer {
+  box-sizing: border-box;
+  width: 90vw;
+  padding: 0 5vw;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chirps {
+  display: flex;
+  flex-flow: column;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+span {
+  padding: auto;
+  text-align: center;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,38 @@
+.chirp {
+  position: relative;
+  border: 3px solid pink;
+  border-radius: 0 1rem 1rem 1rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  line-height: 2rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.chirp:first-of-type {
+  margin: 0 0 1.5rem 0;
+}
+
+.chirpId {
+  position: absolute;
+  font-size: 2rem;
+  background-color: pink;
+  color: white;
+  margin-right: 1rem;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 0 0 0 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  width: 4rem;
+  text-align: center;
+}
+
+.chirpText {
+  position: relative;
+  margin-left: 4rem;
+}
