@@ -1,3 +1,4 @@
+const e = require('express');
 const Sequelize = require('sequelize');
 
 const dbname = process.env.DB_NAME;
@@ -23,7 +24,8 @@ const db = new Sequelize(dbname, username, password, {
     console.log('Connected to DB.'.cyan);
     if (process.env.NODE_ENV === 'development') {
       console.log('db.models', db.models);
-      // await db.sync({force: true});
+      await db.sync({force: true});
+    } else {
       await db.sync();
       console.log('All models synced.'.green.bold);
     }

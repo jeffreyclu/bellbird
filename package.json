@@ -4,17 +4,21 @@
   "description": "interview project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run client-build && npm run start-server",
-    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
-    "dev-server": "cd server && npm run dev",
-    "dev-client": "cd client && npm start",
-    "client-build": "cd client && npm run build",
-    "start-server": "cd server && npm start"
+    "build:client": "cd client && npm run build",
+    "dev:server": "NODE_ENV=development nodemon server.js",
+    "dev:client": "cd client && npm start",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "start": "NODE_ENV=production node server/server.js"
   },
   "author": "Jeffrey Lu",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "concurrently": "^6.0.2",
-    "nodemon": "^2.0.7"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
   }
 }
